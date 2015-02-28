@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head><title>Mussel example: first.md</title>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="mussel.css">
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="mussel.js"></script>
+  </head>
+<body>
+<div class="mussel">
+<h1>mussel</h1>
+<h2>Test</h2>
+<ul>
+<li>one
+</li>
+<li>two
+</li>
+<li>three
+</li>
+</ul>
+<p>How about a  code example:</p>
+<pre><code>code
+foo.bar(&quot;hello world&quot;)</code></pre>
+<h3>One more</h3>
+<p>Try pressing the right arrow key on your keyboard to go to the next slide.</p>
+<p>That’s what I call a “presentation”! ;^)
+Yadig — ☃</p>
+<p id="next"><a href="second.md.html">→</a></p>
+</div>
+<script>$(document).keyup(function(event) { 
+  if(event.which == 70) { // F keycode
+  } else if(event.which == 39) { // Right arrow
+    var next = $("#next > a:first-child").attr("href");
+    window.location = next;
+  } else if(event.which == 37) { // Left arrow
+    history.back();
+  }
+});
+</script>
+</body>
+</html>

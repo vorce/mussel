@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head><title>Mussel example: second.md</title>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="mussel.css">
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="mussel.js"></script>
+  </head>
+<body>
+<div class="mussel">
+<h1>Second slide</h1>
+<p>That was cool wasn’t it?</p>
+<p><img src="http://i.imgur.com/VQLGJOL.gif" alt="Sick burn bro"/></p>
+<ol>
+<li>Numbered lists
+</li>
+<li>are fun
+</li>
+<li>and exciting
+</li>
+</ol>
+<p>A link to <a href="http://www.google.com">google</a> might interest you</p>
+<p>Mussel uses <a href="https://github.com/pragdave/earmark">Earmark</a> — cheers</p>
+<p>Press <strong>left arrow</strong> to go back to the <em>first</em> slide.</p>
+</div>
+<script>$(document).keyup(function(event) { 
+  if(event.which == 70) { // F keycode
+  } else if(event.which == 39) { // Right arrow
+    var next = $("#next > a:first-child").attr("href");
+    window.location = next;
+  } else if(event.which == 37) { // Left arrow
+    history.back();
+  }
+});
+</script>
+</body>
+</html>
