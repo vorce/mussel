@@ -9,3 +9,9 @@ keyboard shortcut to go to the next slide
 
 See the slides and README.md in the example dir for more info
 
+---
+
+### TODO
+
+- Use Phoenix so that you can do live previews and stuff!
+
